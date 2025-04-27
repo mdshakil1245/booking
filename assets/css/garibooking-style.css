@@ -1,0 +1,165 @@
+/* ==========================
+   General Styles
+========================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================
+   Booking Form Styles
+========================== */
+
+.garibooking-form {
+    background: #fff;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.garibooking-form h2 {
+    font-weight: 700;
+    color: #0073aa;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.garibooking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.garibooking-form input[type="text"],
+.garibooking-form input[type="email"],
+.garibooking-form input[type="number"],
+.garibooking-form select,
+.garibooking-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.garibooking-form input[type="text"]:focus,
+.garibooking-form input[type="email"]:focus,
+.garibooking-form input[type="number"]:focus,
+.garibooking-form select:focus,
+.garibooking-form textarea:focus {
+    border-color: #0073aa;
+    outline: none;
+}
+
+.garibooking-form button.submit-btn {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.garibooking-form button.submit-btn:hover {
+    background-color: #005177;
+}
+
+/* ==========================
+   Booking List Table Styles
+========================== */
+
+.garibooking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.garibooking-table th,
+.garibooking-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 14px;
+}
+
+.garibooking-table th {
+    background-color: #0073aa;
+    color: #fff;
+    font-weight: 600;
+}
+
+.garibooking-table tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+.garibooking-table tr:hover {
+    background-color: #e1f0ff;
+}
+
+/* ==========================
+   Dashboard Sidebar Styles
+========================== */
+
+.garibooking-sidebar {
+    background-color: #0073aa;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.garibooking-sidebar a {
+    color: white;
+    display: block;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+    transition: background-color 0.3s ease, border-left-color 0.3s ease;
+}
+
+.garibooking-sidebar a:hover,
+.garibooking-sidebar a.active {
+    background-color: #005177;
+    border-left-color: #fff;
+}
+
+/* ==========================
+   Responsive Styles
+========================== */
+
+@media (max-width: 768px) {
+    .garibooking-form {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .garibooking-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
